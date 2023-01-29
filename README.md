@@ -1,4 +1,4 @@
 # SpringBoard
-Hello! How are you?
+Hello!
 
-This is consist of weekly assignments for SpringBoard
+This Repository consists of Weekly Assignments for SpringBoard Class
