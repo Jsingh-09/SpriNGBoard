@@ -1,0 +1,22 @@
+->FizzBuzz Notes:
+
+1. FizzBuzz with the Print statements
+  -Writing a function that prints "fizz" if N is divisible by 3
+  -Prints "buzz" if n is divisible by 5
+  -Prints "fizzbuzz" if n is divisible by both 3 and 5
+  -Lastly prints n if the above condition are are not true
+
+->>>It involves a good practice of the if/else statement along with the % sign 
+    which is important for the logic to work in this exercise. I ended up writing three 
+    if/else statement, one for the condition that is divisible by 3, by 5 and 3 and 5. Default output which 
+    prints n if none of the condition are true. Observation I had from working on this exercise was 
+    how I can implement the FizzBuzz function and call it in my main function which was bit challeging 
+    but after thinking for a while it clicked and it was pretty easy implementation after that.
+
+2. FizzBuzz using return instead of print statements
+
+->>>The logic was similar to the fizzbuzz with the print statements except this involved using
+    return instead of print. It was bit tricky since I had to make the fizzbuzz function a string 
+    function and include the string library at the top for the function to return string characters.
+    Along with that I had to use a print statement to return the input it used return inside the fizzbuzz
+    function. 
