@@ -1,0 +1,13 @@
+Notes for Fibonacci and Factorial
+
+1. As expected the fibonacci sequence tend to increase as the numbers are increasing. Fibnonacci of 5 is 8 and fibonacci of 33 is 5702887. The amount of time taken for the compiler to show the result tend to increase as the Fibonacci sequence gets more complicated.
+
+2. The Iterative Fibonacci tend to show the same result as the number increased the Fibonacci sequence increased as well. But for the time taken is less than compare to Recursive Fibonacci sequence and Iterative seems to be more Efficient because of the time taken.
+
+3. The Recursive Factorial showed that as the number increased the factorial of a bigger number tends to be larger than a smaller number. The time taken for a smaller number seems to be more than the bigger number. The time taken by 0 factorial is around 8.4 while time taken by 19 factorial is 7.0.
+
+4. The Iterative factorial seems bit odd compare to the recursive. It showed negative value for the factorials 17 and 18. It was surprising to see those results. But the time taken tend to be less for the factorial of 0 compare to the factorial of 24.
+
+5. The interesting pattern was the time taken for Fibonacci seems more compare to the factorial and there were negative result for the factorial in the interative method.
+
+6. The interesting pattern that was seem was the factorial were decresing as the number went up and there were some negative results that were for factorial 17, 18, 20, 21 and 22 which was the most surprising result.
