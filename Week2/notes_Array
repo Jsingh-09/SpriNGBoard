@@ -1,0 +1,11 @@
+Notes on dynamic Array and Deque:
+
+1. Appending to the dynamic array implementation were easy which involved creating an empty array and adding elem_idx to it. The input shows around 10000 rows with 5   columns.
+
+2. Prepending to the dynmaic array was also easy to implement. The showed 3 digit number compare tot he 2 digit number compare to the appending of the array.
+
+3. Appending of deque array showed two digit number similar to the appending of the dynamic array. The results showed 10,000 rows along with 5 colums.
+
+4. Prepending of the deque array showed similar result to the appending of the deque array, I didn't notice any different results expect more three digits numbers.
+
+5. Only thing that I noticed was that how the prepending of the dynamic array was the only array that showed three digit number compare to all the other array in this file.
