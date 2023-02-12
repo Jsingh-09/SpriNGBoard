@@ -1,0 +1,10 @@
+Notes Float Division:
+
+This is similar to the integer division except this shows the decimals for the accurate
+divsion result along with the 3 decimals which are set by the setprecision(3) function
+that shows the 3 decimals after the number that is divisible. 
+Making the numenator and denominator from [-10,10] and the results showed all the 
+number from -10 to 10 since it used static_cast function which shows the answer
+in type float unlike the Integer division where it gave an exception error. The 
+results were as expected going from -10 to 10 and also showing -inf and +inf
+when the number was divisible by 0 instead of an error.

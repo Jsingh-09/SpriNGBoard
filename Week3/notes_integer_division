@@ -1,0 +1,13 @@
+Notes for Integer Divison:
+
+1. For the first part the of the code the setw(5) sets the width of the integer.
+after that there is a for loop that goes from 1 to 10 and increment until it equal
+or greator than 10. Both the side of the code started from 1 and went to 10 and all
+the number had a positive infront of them because of the showpos where it always
+displays the negative number with the positive sign. The results were as expected 
+showing if divisible mostly 1s and no decimal since it's an integer.
+
+Changing the code to work from [-10,+10] but I ran across an error "floating point
+exception (core dumped), while looking into it, the error was related to the 0
+in the numenator and denominator which is impossible to do if trying to divide
+a number by 0. 
