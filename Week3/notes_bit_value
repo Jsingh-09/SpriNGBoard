@@ -1,0 +1,11 @@
+Notes Building Values from Bits:
+
+For the first task was to set the x = 2695506604, which was done by using the bitwise |. After that the second task was to toggle bit 3, it was done by using bitwise ^ 
+and 1<<3 toggle by 3 and do the same step for the next task. After that the fourth
+task was to clear bit 7 which was done by using bitwise & operand and ~. The last 
+task was to clear bits from 16-31, that was bit confusing since it involved two 
+digits unlike one for the last few tasks, I didn't quite get the results for the 
+16-31 bits since I tried couple different methods using OR opeators but didn't find 
+any luck. 
+
+
