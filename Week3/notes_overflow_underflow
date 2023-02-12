@@ -1,0 +1,15 @@
+Overflow and Underflow:
+
+1. For the first part of the code it was to initialize 32-bit signed and unsigned 
+integers. The result were not surprising at all since signed Interger can have the 
+negative and the positive value. When the signed integer that was initialized to 0 
+had an decrement to it, it went from being 0 to -1 which makes sense since it has 
+negative value where the unsigned integer went from being 0 to 18446..... to a positive 
+number which is the maximum it can hold.
+
+2. For the second one the task was to initialize 16-bit signed and unsigned integers
+to their maximum values. For the signed integer it showed a negative value from being 
+32767 to -32768, since the signed integer has the negative value after its maximum 
+positive number but for the unsigned interger it showed a positive number from 32767 to
+32768 which makes sense since it showed the positive number instead of a negative since
+the unsigned doesn't have negative values.  

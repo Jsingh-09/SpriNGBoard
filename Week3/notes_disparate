@@ -1,0 +1,6 @@
+Notes on Dynamic Range and Precision:
+
+The result for adding the big number which was 100 million to the samll number
+which was 1 for the int32_t, the result was as expected to be 100,000,001.
+But for the float the result wasn't the same since float can only hold 8 bits
+which is maximum of 256 so the result for the sum was equal to the big number.
