@@ -1,0 +1,14 @@
+Notes for Creating  std:vector
+
+1. Using curly  parantheses. The result I got from running the parantheses was as expected. The output was 10 5 since it construct the value itself inside the curly 
+parantheses.
+
+2. Using curly parantheses by initializing. The result were similar to the first one,
+since it is doing the same thing as constructing the values inside the vector.
+
+3. Using the parantheses. The result were different since this is constructing the 
+elements of the vector. The result was printing 5 ten times. 
+
+4. Using the parantheses by initializing. The was the only one that gave an error 
+saying "conversion from 'int' to non-scalar type 'std::vector<int>' requested.  
+The error indicates that the two data type are not compatible with each other. 
