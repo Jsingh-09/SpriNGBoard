@@ -1,0 +1,15 @@
+Notes Map vs Unordered_map
+
+> The final ordering of the map seems to be in order as expected.
+The ordering of the unorder_map is not in order based on the 
+name of the map since it will insert element in no certain order,
+compare to the map.
+
+> The data structure of the map is implemented by self-balancing
+binary search tree while the unordered_map is implemented by 
+hash table. The map takes O(log(n) for insertion and while 
+unordered_map might take O(n) for the worst case.
+
+> The load factor increases as the size of the items being inserted
+are increasing the hash table has to resize itself because of the 
+insertion of more items.
