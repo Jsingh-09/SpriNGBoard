@@ -1,0 +1,20 @@
+Notes on lvalues and rvalues:
+
+1. The output has 9 functions in the main. The compiler input 9 function as 
+   expected showing the lvalue ref and rvalue ref. The first three func inputs r
+   value ref since (5, 2+3, int{5}) are all temporary literals. The four one 
+   input lvalue since x has a named storage and can be modified later in the code.
+   The fifth and the sixth input are rvalue as well because x/2 is an expresion 
+   with not a new object name so it gets the rvalue and for move(x) this also
+   involves the lvalue but it doesn't have a new object name which requires a
+   named storage location and this gets the rvalue. The seventh is const lvalue
+   ref because there a const declared y and y has a named storage location but
+   since it's a const it cannot be modified so it shows const lvalue ref. The 
+   8th shows rvalue since y/2 is an expresion not involving a new object. The
+   last one is const rvalue ref since y is a constant value and it's using an 
+   expression on a constant value.
+
+2. The only difference was that const for the last func switched from being 
+   const rvalue ref to cont lvalue ref since rvalue const was removed from the 
+   code.
+ 
