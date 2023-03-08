@@ -1,0 +1,9 @@
+Notes on Slicing:
+
+1. The output shows "moo", "moo" and "I don't know how to amke a sound!". The 
+   output seems to input moo twice one for the c object for class cow and another
+   one that is a reference cr to class Animal which is the base class. The last one
+   is also equal to c but it is passed by value instead of pass by reference 
+   compare to object cr. While doing reserach passing by reference or pointer can 
+   lead to no slicing at all but passing by value will lead to slicing since object
+   is sliced off and tends to get lost.

@@ -1,0 +1,14 @@
+Notes on Polymorphism:
+
+1. The output prints two statements "moo" and "Ooof - I ate too much" which are
+   implemented in the two classes cow and fullcow which inherited from 'Animal'
+   and override of the make_sound() function to print "moo". For the second print
+   statement which inherits from 'Cow' and overrides the make_sound() fucntion
+   to print "oof- I ate too much"
+
+2. FullCow still able to override Cow's make_sound() method because it's inheriting
+   make_sound() from the base class Cow which is inherited from Animal.
+
+3. Final keyword to Cow's make_sound() makes the compiler to complaining beacuse
+   the keyword final cuts the inheritance. In other words the specific function 
+   cannot be overidden futher in the code. 

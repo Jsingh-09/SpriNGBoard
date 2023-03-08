@@ -1,0 +1,31 @@
+Notes on Constness Exercise:
+
+1. The reason &s matches the corresponding &ncs/&cs values and other times it
+   does not because for the first ncs after output it  was modified since
+   it was call by reference since any changes made to the parameter are within the
+   function are reflected in the original varaible outside the function. The second
+   output didn't change since it was call by value where any changes within the 
+   function are not reflected in the original variable outside the function.
+   The last two output for non-const string didn't change as well since those were
+   const for both call by value and call by reference.
+
+2. Ncs before/after matches sometimes since the strings can be modified after it
+   has been intialized where the cs before/after always match since the strings 
+   cannot be modified after it has been intialized.
+
+3. The reason the call to the overloaded_func() are different since the first call     is to a non costant &s while the second call is to a const &s function. That's
+   why the outputs are different for the both the calls.
+
+4. The compiler always allows s.size() to be called but sometimes rejects calls
+   to s.append() since calling the size() method to a constant or to a non-constant
+   string doesn't change the number of characteres inside the string. It can be
+   called whether the string is constant or non-constant since it returns the
+   size of the string. The append() method cannot be applied to the constant 
+   object since it will be rejected by the compiler since the constant object 
+   cannot be changed. It can only be applied to a non-constant object.
+
+5. The compiler complains here but not at the next call to non_const_by_val since
+   when it is passed by reference to a non-constant parameter in a function, since 
+   the function might try modifying the string but it will input an error since it
+   was constant before and pass by value will not show an error since it can be 
+   modified without updating the original string. 

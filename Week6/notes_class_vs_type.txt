@@ -1,0 +1,13 @@
+Notes Type vs Class:
+
+1. LINE1  Declares a variable x and initializes it's value to "Hello"
+   LINE2  Creates a reference variable rx of string type and sets that to variable x   LINE3  Creates a constant reference variable crx of string type and sets that to
+          x as well.
+
+2. The outputs results in the same memory address for all the values. Since they
+   are all set to the variable x and will have the same memory address. There is 
+   only one string object being created in this program which is variable x.
+
+3. The reason LINE 6 causes an error because crx was a constant reference and
+   modifying a constant will always cause an error since that is not possible
+   and compiler will show an error while compiling the code.
