@@ -1,0 +1,6 @@
+Changes made to the game:
+
+-- Fixed the indentation for the if/else statements inside the game.cpp, for the Game::roll method. Along with 
+   changing the number of players from 6 to 7 since robert kept showing alot of money since he was last one
+   being added to the vector and changing from 6 to 7 fixed the issue. Along with making small changes to the 
+   Game.cpp if/else statement and adding {} making it easier to read the code for myself.  
