@@ -1,0 +1,24 @@
+Notes on Exercise 2:
+
+- Counter and counter_mutex are being passed by reference because this will allow allow the
+  original value to be updated rather than the copy of the arguments that are made when the 
+  threads are created.
+
+  It will take 3 seconds since each thread will take around 1 second and the test will pass if
+  there are no race conditions.
+
+  The expectation did not match the output since the output didn't match 3000 and while 
+  running the program for couple times the test failed since everytime the result was off
+  by few number, for example the first time I ran it was around 2861 and the second time it
+  was around 2889 clearly not equal to 3000.
+
+  After inserting the lock_guard inside the for loop the test seem to pass
+  but it did take long time since it didn't output the passing test result. It took around
+  3 seconds for the test to pass.
+  
+  Having the lock_guard and the increment operation inside the local scope block did not
+  have an impact on the test since the test passed along with taking less time around 1 and
+  half second to show the pass test output. This allows the other threads to execute their 
+  own critical section code and they don't have to wait since the lock will release as 
+  soon as it gets outside the block.
+

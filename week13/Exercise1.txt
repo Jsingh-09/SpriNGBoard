@@ -1,0 +1,25 @@
+Notes for Exercise 1:
+
+- The output for the following code will be based on the three threads in the Test case.
+  The function print_letter takes two arguments letter and num_times. That function also
+  has a for loop which loops from idx =0 to the num-times and prints letter immediately since
+  it is using flush. The output will print a, b, and c 99 times since the for loop will print
+  it 0 to less than 100 times.
+
+  The output shows a,b and c but I was expecting the letters to be printed by the number of 
+  threads since thread 1 is a, thread 2 is b and thread 3 is c but the ouput was random when
+  ran couple times, it will show around 30 a's first and sometimes c's first on the output 
+  lines.
+
+  All the threads are running when the execution reaches Line A since the threads will loop
+  through the for loop inside the function print_letter to make sure the letters are printed
+  the right amount stated in the loop.
+
+  By commenting out one of the join lines the program ran into an error which says it ran into
+  a abnormal termination which means the join basically ensures the thread has completed 
+  execution and holding off the other thread which are executing at the same time.
+
+  This code might lead to race condition since this code doesn't use any locks to prevent
+  the thread from executing concurrently which might lead to race condition. In order to fix
+  that mutex locks can be used to prevent this type of behavior.
+

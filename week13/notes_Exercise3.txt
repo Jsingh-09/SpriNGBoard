@@ -1,0 +1,14 @@
+Notes for Exercise 3 DeadLock:
+
+- The concurrency issues in the code is the mutex are not implemented in the 
+  right order. Since for the first function increment_counter_vera_1 the 
+  lock_guard for mutex_a is before mutex_b but for the second function
+  mutex_b is before mutex_a. This might lead to concurrency issue of deadlock.
+
+- When I ran code nothing happened since as I explained it before this code 
+  will lead to deadlock and nothing will be executed for this code. Since the
+  locks are not used in consistent order leading to deadlock condition.
+
+- I ended up changing the code in the second function where I switched the 
+  mutex_a to come before mutex_b to follow the consistency for both the 
+  function in this code.
